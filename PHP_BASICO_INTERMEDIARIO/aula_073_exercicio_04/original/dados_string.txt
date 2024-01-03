@@ -1,0 +1,5 @@
+teste
+tsss
+asdasd
+gabriel na linha 4
+<? php __LINE__ ?>
