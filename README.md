@@ -1,2 +1,2 @@
 # Estudo-PHP
-Este repositório contém minhas práticas dos cursos de php
+Este repositório tem todos os meus estudos de php do curso da udemy.
