@@ -17,7 +17,7 @@ class Produto {
 
 $database = 'udemy_loja_online';
 $username = 'user_loja_web';
-$password = 'bieldahora321';
+$password = 'Gabriel123';
 
 $ligacao = new PDO("mysql:host=localhost;dbname=$database", $username, $password);
 

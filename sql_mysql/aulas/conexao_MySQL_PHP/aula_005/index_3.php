@@ -9,7 +9,7 @@ Podemos usar o fetch para fazer o seguinte:
 // configurações
 $database = 'udemy_loja_online';
 $username = 'user_loja_web';
-$password = 'bieldahora321';
+$password = 'Gabriel123';
 
 // ligação
 $ligacao = new PDO("mysql:host=localhost;dbname=$database", $username, $password);
