@@ -3,12 +3,12 @@
 // dados de ligação
 $database = 'udemy_loja_online';
 $username = 'user_loja_web';
-$password = 'c2hifo8akeka5iriKOT4X2N2NIG3jE';
+$password = 'Gabriel123';
 
 // ligação
 $ligacao = new PDO("mysql:host=localhost;dbname=$database;charset=utf8", $username, $password);
 
-$username = $_POST['text_username'];
+$user = $_POST['text_username'];
 $passwrd = $_POST['text_passwrd'];
 
 $sql = "SELECT * FROM usuarios WHERE username = '$username' AND passwrd = '$passwrd'";

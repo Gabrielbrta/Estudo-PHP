@@ -12,7 +12,7 @@
     // dados de ligação
     $database = 'udemy_loja_online';
     $username = 'user_loja_web';
-    $password = 'bieldahora321';
+    $password = 'Gabriel123';
 
     // ligação
     $ligacao = new PDO("mysql:host=localhost;dbname=$database;charset=utf8", $username, $password);
@@ -43,26 +43,26 @@
                 <hr>
                 <table class="table table-bordered table-striped">
                     <thead class="bg-dark text-white">
-                        <tr>
-                            <th>Nome</th>
-                            <th>Sexo</th>
-                            <th>Data nascimento</th>
-                            <th>Email</th>
-                            <th>Telefone</th>
-                            <th>Morada</th>
-                        </tr>
+                        <th>Nome</th>
+                        <th>Sexo</th>
+                        <th>Data nascimento</th>
+                        <th>Email</th>
+                        <th>Telefone</th>
+                        <th>Morada</th>
                     </thead>
-                    <tbody>
-                        <?php foreach($resultados as $cliente): ?>
-                            <tr>
-                                <td><?= $cliente->nome ?></td>
-                                <td><?= $cliente->sexo == 'm' ? 'Masculino' : 'Feminino' ?></td>
-                                <td><?= substr($cliente->data_nascimento, 0, 10) ?></td>
-                                <td><?= $cliente->email ?></td>
-                                <td><?= $cliente->telefone ?></td>
-                                <td><?= $cliente->morada . ' - ' . $cliente->cidade ?></td>
-                            </tr>
-                        <?php endforeach; ?>
+                        <tbody>
+                        <?php if(!empty($resultados)): ?>
+                            <?php foreach($resultados as $cliente):?>
+                                <tr>
+                                    <td><?= $cliente->nome ?></td>
+                                    <td><?= $cliente->sexo == "m" ? "Masculino" : "Feminino" ?></td>
+                                    <td><?= substr($cliente->data_nascimento, 0, 10)?></td>
+                                    <td><?= $cliente->email ?></td>
+                                    <td><?= $cliente->telefone ?></td>
+                                    <td><?= $cliente->morada. " - " . $cliente->cidade ?></td>
+                                </tr>
+                            <?php endforeach;?>
+                        <?php endif; ?>
                     </tbody>
                 </table>
 
